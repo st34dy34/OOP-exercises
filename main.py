@@ -1,3 +1,5 @@
+# DU David Hruška - OOP Topic. Classes. Objects. Part 1
+
 #1 Implement a class Car
 class Car:
     def __init__(self,model,release_year,manufacturer,engine_capacity,color,price):
@@ -39,6 +41,7 @@ class Book:
     Price: {self.price}
     """
 
+
 book1 = Book(
     "Harry Potter",
     1997,
@@ -48,3 +51,32 @@ book1 = Book(
     20.99
 )
 print(book1)
+
+#3 Implement a class Stadium
+
+class Stadium:
+    def __init__(self,name, opening_date, country, city, capacity):
+        self.name = name
+        self.opening_date = opening_date
+        self.country = country
+        self.city = city
+        self.capacity = capacity
+        
+    def __str__(self):
+        return f"""
+    Name: {self.name}
+    Opening Date: {self.opening_date}
+    Country: {self.country}
+    City: {self.city}
+    Capacity: {self.capacity}
+    """
+  
+        
+stadium1 = Stadium(
+    name="Camp Nou",
+    opening_date="24 September 1957",
+    country="Spain",
+    city="Barcelona",
+    capacity=99354
+)
+print(stadium1)
